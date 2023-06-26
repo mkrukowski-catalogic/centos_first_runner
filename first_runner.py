@@ -8,7 +8,7 @@ login = 'login'
 password = 'password'
 interval = 1
 host_prefix = 'prefix'
-host_name_command =f"hostname {host_prefix}-{fake.user_name()}"
+host_name_command = f"hostnamectl set-hostname {host_prefix}-{fake.user_name()}"
 
 time.sleep(2)
 
