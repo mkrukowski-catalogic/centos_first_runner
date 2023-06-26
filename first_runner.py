@@ -12,7 +12,7 @@ host_name_command = f"hostnamectl set-hostname {host_prefix}-{fake.user_name()}"
 
 time.sleep(2)
 
-commands = (login, password,host_name_command,'nmcli connection modify ens192 ipv4.method auto', 'nmcli connection up ens192', 'systemctl disable firewalld', 'systemctl stop firewalld', 'reboot')
+commands = (login, password,host_name_command,'nmcli connection modify ens192 ipv4.method auto', 'nmcli connection up ens192', 'systemctl disable firewalld', 'systemctl stop firewalld', 'logout')
 
 def input_function(*args):
     for arg in args:
